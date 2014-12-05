@@ -1,0 +1,102 @@
+.mod_hotel_reservation {
+	background: none;
+	font-size: 12px !important;
+	width: 225px;
+	padding: 0;
+	border: none;
+}
+
+.mod_hotel_reservation.horizontal {
+	background: none;
+	padding: none;
+	color: #FFFFFF;
+	width: 100%;
+}
+
+.mod_hotel_reservation h3{
+	color: #FFFFFF;
+}
+
+
+.mod_hotel_reservation table{
+	margin: 5px 7px 0;
+}
+
+.mod_hotel_reservation input, .mod_hotel_reservation select {
+	font-family: Tahoma, Arial, Helvetica, Sans-Serif;
+	font-size: 12px;
+	border: 1px solid #787878;
+	height: 18px;
+}
+
+.reservation-cell, .reservation-cell label{
+	color: #FFFFFF;
+}
+
+.mod_hotel_reservation a,.mod_hotel_reservation a:visited {
+	color: #067AB4;
+}
+
+.mod_hotel_reservation a.selected {
+	color: #333;
+	font-weight: bold;
+}
+
+
+.mod_hotel_reservation.horizontal  .search-nav {
+ 	margin: 0;
+}
+
+.search-category-box {
+    border-top: none;
+    padding-left: 0px;
+}
+
+#search-filter {
+    opacity: 1;
+	width: 225px;
+	border: none;
+}
+
+.seach-filter h3 {
+    background: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.search-nav strong {
+	font-size: 1em;
+}
+
+ .search-nav input{
+ 	margin: 8px 0;
+	width: 190px;
+	padding: 3px;
+ }
+ 
+.search-category-box .selectedlink .cross { 
+    margin-right: 15px;
+}
+.mod_hotel_reservation.horizontal .search-nav input {
+	width: 217px;
+	padding: 2px;
+}
+
+
+.mod_hotel_reservation a.button-module, .mod_hotel_reservation span.button-module {
+    background: url("../images/check_btn_blue.png") no-repeat; 
+}
+
+.mod_hotel_reservation a.button-module span, .mod_hotel_reservation span.button-module button {
+    background: url("../images/check_btn_blue.png") no-repeat;
+}
+
+.mod_hotel_reservation a.button span, .mod_hotel_reservation span.button button, .mod_hotel_reservation span.button input, .mod_hotel_reservation del.button span {
+    background-color: transparent;
+    background-position: 100% 0;
+  
+}
+
+.mod_hotel_reservation span.button{
+	float: right; 
+}

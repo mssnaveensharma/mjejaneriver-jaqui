@@ -1,0 +1,52 @@
+.hotel-search-list {
+    background-color: transparent;
+}
+
+.hotel_reservation {
+    background-color: transparent;
+    font-size: 12px;
+}
+
+.hotel_reservation td {
+	font-size: 12px;
+}
+
+.hotel_details_container {
+  	background-color: transparent;
+  	font-size: 12px;
+}
+
+.hotel-details .hotel-price, .offer-price {
+    background: url("../img/royal/hotel_price_box.png") no-repeat;
+}
+
+.offer-price {
+    background: url("../img/royal/hotel_price_box_offers.png") no-repeat;
+}
+
+a.button span, span.button button, span.button input, del.button span {
+	height: 30px;
+	line-height: 30px!important;
+}
+
+a.button-green, span.button-green {
+    background: url("../img/royal/check_btn_blue.png") no-repeat;
+}
+
+a.button-green span, span.button-green button {
+    background: url("../img/check_btn_blue.png") no-repeat scroll 0 0 transparent;
+}
+
+a.button span, span.button button, span.button input, del.button span {
+    background-color: transparent;
+    background-position: 100% 0;
+}
+
+.hotel-info {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.hotel-price .view-hotel, .offer-price .view-offer {
+    margin-top: 6px;
+}

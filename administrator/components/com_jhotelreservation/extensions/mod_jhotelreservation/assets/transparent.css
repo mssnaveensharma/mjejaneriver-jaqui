@@ -1,0 +1,61 @@
+.mod_hotel_reservation 
+{
+	background-color	: #F4F4EC;
+	opacity: 0.8;
+	border: 1px solid #E6E6D2;
+	width: 99%;
+}
+
+
+
+.btn_hotelreservation
+{
+	float				: right;
+	font-size			: 11px;
+	line-height			: 18px;
+	border				: 1px solid #C9C9CA;
+	margin				: 1px;
+	margin-left			: 9px;
+	text-align			: center;
+	padding: 0 5px;
+	color: #000;
+	background: #F3F3F3;
+	background: -webkit-gradient(linear, left top, left bottom, from(#F3F3F3), to(#DFDFDF) );
+	background: -webkit-linear-gradient(top, #F3F3F3, #DFDFDF);
+	background: -moz-linear-gradient(top, #F3F3F3, #DFDFDF);
+	background: linear-gradient(top, #F3F3F3, #DFDFDF);
+} 
+
+/* hover state for form button divs */
+.btn_hotelreservation:hover, .btn_hotelreservation.default:hover {
+	margin				: 0px;
+	margin-left			: 8px;
+	border-width		: 2px;
+}
+
+/* style for default button */
+.btn_hotelreservation.default {
+	border				: 1px solid #8e8e4f;
+	float				:left;
+}
+
+.btn_hotelreservation a {
+	font-size			: 10px;
+	font-weight			: bold;
+	font-family			:verdana, arial, helvetica, sans-serif;
+	color				: #000000;
+	border				: 1px solid #ffffff;
+	text-decoration		: none;
+	padding				: 2px 5px;
+}
+
+/* hover state for the link in each form button */
+.btn_hotelreservation a:hover {
+	text-decoration		: none;
+	color				: #FF0000;
+	
+}
+
+.search-nav input {
+    width: 165px;
+}

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	version="3.0"
+	type="plugin"
+	group="system">
+	<name>System - Thumb Gallery</name>
+	<author>Jesus Vargas</author>
+	<creationDate>Feb 2012</creationDate>
+	<copyright>Copyright (C) 2005 - 2011 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>chuzky@gmail.com</authorEmail>
+	<authorUrl>http://www.joomlahill.com</authorUrl>
+	<version>1.1.1</version>
+	<description>PLG_THUMBGALLERY_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="thumbgallery">thumbgallery.php</filename>
+		<filename>index.html</filename>
+		<folder>images</folder>
+		<folder>language</folder>
+		<folder>scripts</folder>
+	</files>
+	<update></update>
+	<config>
+		<fields name="params">
+			<fieldset name="basic" addfieldpath="plugins/system/thumbgallery/scripts/">
+				<field name="desc" type="jvxml"
+					view="intro"
+					label=""
+					description=""
+				/>
+				
+				<field name="layout" type="list"
+					default="1"
+					label="PLG_THUMBGALLERY_FIELD_LAYOUT_LABEL"
+					description="PLG_THUMBGALLERY_FIELD_LAYOUT_DESC">
+					<option value="0">PLG_THUMBGALLERY_OPTION_VERTICAL
+					</option>
+					<option value="1">PLG_THUMBGALLERY_OPTION_HORIZONTAL
+					</option>
+				</field>
+				
+				<field name="im_space" type="text"
+					default="10"
+					size="5"
+					label="PLG_THUMBGALLERY_FIELD_IM_SPACE_LABEL"
+					description="PLG_THUMBGALLERY_FIELD_IM_SPACE_DESC"
+				/>
+				
+				<field name="im_width" type="text"
+					default="416"
+					size="5"
+					label="PLG_THUMBGALLERY_FIELD_IM_WIDTH_LABEL"
+					description="PLG_THUMBGALLERY_FIELD_IM_WIDTH_DESC"
+				/>
+				
+				<field name="im_height" type="text"
+					default="300"
+					size="5"
+					label="PLG_THUMBGALLERY_FIELD_IM_HEIGHT_LABEL"
+					description="PLG_THUMBGALLERY_FIELD_IM_HEIGHT_DESC"
+				/>
+				
+				<field name="im_proportions" type="list" default="bestfit"
+					label="PLG_THUMBGALLERY_FIELD_IM_PROPORTIONS_LABEL"
+					description="PLG_THUMBGALLERY_FIELD_IM_PROPORTIONS_DESC"
+				>
+				
+				<field name="im_quality" type="text"
+					default="95"
+					size="5"
+					label="PLG_THUMBGALLERY_FIELD_IM_QUALITY_LABEL"
+					description="PLG_THUMBGALLERY_FIELD_IM_QUALITY_DESC" 
+				/>
+					<option value="bestfit">PLG_THUMBGALLERY_OPTION_PROP_BEST_FIT</option>
+					<option value="crop">PLG_THUMBGALLERY_OPTION_PROP_CROP</option>
+					<option value="only_cut">PLG_THUMBGALLERY_OPTION_PROP_ONLY_CUT</option>
+					<option value="fill">PLG_THUMBGALLERY_OPTION_PROP_FILL</option>
+					<option value="transparent">PLG_THUMBGALLERY_OPTION_PROP_TRANSP</option>
+					<!--<option value="stretch">PLG_THUMBGALLERY_OPTION_PROP_STRECH</option>-->
+				</field>
+				
+				<field name="th_sort" type="list" 
+					default="0" 
+					label="PLG_THUMBGALLERY_FIELD_SORT_LABEL" 
+					description="PLG_THUMBGALLERY_FIELD_SORT_DESC">
+					<option value="0">PLG_THUMBGALLERY_OPTION_SORT_A_Z
+					</option>
+					<option value="1">PLG_THUMBGALLERY_OPTION_SORT_Z_A
+					</option>
+					<option value="2">PLG_THUMBGALLERY_OPTION_SORT_OLD_NEW
+					</option>
+					<option value="3">PLG_THUMBGALLERY_OPTION_SORT_NEW_OLD
+					</option>
+					<option value="4">PLG_THUMBGALLERY_OPTION_SORT_RANDOM
+					</option>
+				</field>
+				
+				<field name="bgcolor" type="text"
+					default="#FFFFFF"
+					label="PLG_THUMBGALLERY_FIELD_BGCOLOR_LABEL"
+					description="PLG_THUMBGALLERY_FIELD_BGCOLOR_DESC" />
+				
+				<field name="th_width" type="text"
+					default="83"
+					size="5"
+					label="PLG_THUMBGALLERY_FIELD_TH_WIDTH_LABEL"
+					description="PLG_THUMBGALLERY_FIELD_TH_WIDTH_DESC"
+				/>
+				
+				<field name="th_height" type="text" default="60"
+					label="PLG_THUMBGALLERY_FIELD_TH_HEIGHT_LABEL"
+					description="PLG_THUMBGALLERY_FIELD_TH_HEIGHT_DESC"
+				/>
+				
+				<field name="th_proportions" type="list" default="bestfit"
+					label="PLG_THUMBGALLERY_FIELD_TH_PROPORTIONS_LABEL"
+					description="PLG_THUMBGALLERY_FIELD_TH_PROPORTIONS_DESC"
+				>
+					<option value="bestfit">PLG_THUMBGALLERY_OPTION_PROP_BEST_FIT</option>
+					<option value="crop">PLG_THUMBGALLERY_OPTION_PROP_CROP</option>
+					<option value="only_cut">PLG_THUMBGALLERY_OPTION_PROP_ONLY_CUT</option>
+					<option value="fill">PLG_THUMBGALLERY_OPTION_PROP_FILL</option>
+					<option value="transparent">PLG_THUMBGALLERY_OPTION_PROP_TRANSP</option>
+					<!--<option value="stretch">PLG_THUMBGALLERY_OPTION_PROP_STRECH</option>-->
+				</field>
+				
+				<field name="th_quality" type="text"
+					default="80"
+					size="5"
+					label="PLG_THUMBGALLERY_FIELD_TH_QUALITY_LABEL"
+					description="PLG_THUMBGALLERY_FIELD_TH_QUALITY_DESC"
+				/>
+				
+				<field name="th_cols" type="text"
+					default="3"
+					size="5"
+					label="PLG_THUMBGALLERY_FIELD_TH_COLS_LABEL"
+					description="PLG_THUMBGALLERY_FIELD_TH_COLS_DESC"
+				/>
+				
+				<field name="th_rows"
+					type="text"
+					default="4"
+					size="5"
+					label="PLG_THUMBGALLERY_FIELD_TH_ROWS_LABEL"
+					description="PLG_THUMBGALLERY_FIELD_TH_ROWS_DESC"
+				/>
+				
+				<field name="th_space" type="text"
+					default="5"
+					size="5"
+					label="PLG_THUMBGALLERY_FIELD_TH_SPACE_LABEL"
+					description="PLG_THUMBGALLERY_FIELD_TH_SPACE_DESC"
+				/>
+				
+				<field name="th_type" type="list" default="" 
+					label="PLG_THUMBGALLERY_FIELD_TH_TYPE_LABEL"
+					description="PLG_THUMBGALLERY_FIELD_TH_TYPE_DESC"
+				>
+					<option value="">PLG_THUMBGALLERY_OPTION_THUMB_TYPE_PRESERVE</option>
+					<option value="png">PLG_THUMBGALLERY_OPTION_THUMB_TYPE_PNG</option>
+					<option value="gif">PLG_THUMBGALLERY_OPTION_THUMB_TYPE_GIF</option>
+					<option value="jpeg">PLG_THUMBGALLERY_OPTION_THUMB_TYPE_JPEG</option>
+				</field>
+				
+				<field name="pg_show" type="radio"
+					class="btn-group"
+					default="1"
+					label="PLG_THUMBGALLERY_FIELD_SHOW_PAGINATION_LABEL"
+					description="PLG_THUMBGALLERY_FIELD_SHOW_PAGINATION_DESC">
+					<option value="1">JYES
+					</option>
+					<option value="0">JNO
+					</option>
+				</field>
+				
+				<field name="pg_1" type="radio"
+					class="btn-group"
+					default="1"
+					label="PLG_THUMBGALLERY_FIELD_SHOW_PAGINATION_1_LABEL"
+					description="PLG_THUMBGALLERY_FIELD_SHOW_PAGINATION_1_DESC">
+					<option value="1">JYES
+					</option>
+					<option value="0">JNO
+					</option>
+				</field>
+				
+				<field name="pg_2" type="radio"
+					class="btn-group"
+					default="1"
+					label="PLG_THUMBGALLERY_FIELD_SHOW_PAGINATION_2_LABEL"
+					description="PLG_THUMBGALLERY_FIELD_SHOW_PAGINATION_2_DESC">
+					<option value="1">JYES
+					</option>
+					<option value="0">JNO
+					</option>
+				</field>
+				
+				<field name="pg_3" type="radio"
+					class="btn-group"
+					default="1"
+					label="PLG_THUMBGALLERY_FIELD_SHOW_PAGINATION_3_LABEL"
+					description="PLG_THUMBGALLERY_FIELD_SHOW_PAGINATION_3_DESC">
+					<option value="1">JYES
+					</option>
+					<option value="0">JNO
+					</option>
+				</field>
+							
+				<field name="pg_visible" type="text"
+					default="3"
+					size="5"
+					label="PLG_THUMBGALLERY_FIELD_PAGINATION_VISIBLE_LABEL"
+					description="PLG_THUMBGALLERY_FIELD_PAGINATION_VISIBLE_DESC"
+				/>
+				
+				<field name="pg_image" type="filelist" 
+					directory="plugins/system/thumbgallery/images"
+					hide_none="0"
+					hide_default="1"
+					filter=".png"
+					default="-1"
+					label="PLG_THUMBGALLERY_FIELD_PAGINATION_IMAGE_LABEL"
+					description="PLG_THUMBGALLERY_FIELD_PAGINATION_IMAGE_DESC">
+				</field>
+								
+			</fieldset>
+		</fields>
+	</config>
+</extension>

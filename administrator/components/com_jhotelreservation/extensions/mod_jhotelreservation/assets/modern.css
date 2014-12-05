@@ -1,0 +1,129 @@
+.mod_hotel_reservation {
+	background: url('../images/reservation_bg.jpg') no-repeat;
+}
+
+.mod_hotel_reservation td{
+	color: #333 !important;
+}
+
+.search-nav input {
+    width: 180px;
+}
+
+.tr_title {
+	background-color: #BBBBBB;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.seach-filter h3, .seach-filter h4{
+	background: none;
+	color: #333 !important;
+	text-shadow: none;
+}
+
+#search-filter{
+	width: 100%;
+	margin-top: 20px;
+	border: none;
+	background-color: transparent !important;
+}
+
+.seach-filter a{
+	color: #A8A34A!important;
+}
+
+.seach-filter h3{
+    background-image: url("../images/menu_header.gif");
+    background-repeat: repeat-x;
+    display: block;
+    height: 28px;
+	color: #F8FFC7 !important;
+    font-family: Tahoma,Arial,Helvetica,Sans-Serif;
+    font-size: 14px;
+    font-weight: bold;
+	line-height: 28px;
+	padding: 0 7px;
+	margin: 0;
+}
+
+.seach-filter h4{
+	background-color: #535A3F;
+	color: #F8FFC7 !important;
+	margin: 0;
+	padding:0;
+	line-height: 30px;
+	padding: 0 5px;
+}
+
+.seach-filter ul{
+	color: #ADBAA1;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.seach-filter ul li {
+    background-color: #535A3F;
+    border-bottom: 1px solid #3B402D;
+    margin: 0;
+}
+
+.seach-filter ul li a{
+    color: #F8FFC7;
+    font-family: Tahoma,Arial,Helvetica,Sans-Serif;
+    text-decoration: none;
+	line-height: 1.32em;
+	padding: 3px 0 3px 10px;
+	display: block;
+}
+
+.seach-filter li.active a, .seach-filter li.selectedlink{
+    background-image: url("../images/submenu_active.gif");
+    background-repeat: repeat-x;
+    display: block;
+}
+.seach-filter ul li.active ul li a {
+    padding-left: 20px;
+	background:none;
+}
+.seach-filter ul ul li {
+    background-color: #2A3124;
+    border: medium none;
+    margin: 0;
+	
+}
+.seach-filter li.active ul li.active a {
+    color: #FEC601;
+    font-weight: bold;
+}
+.seach-filter ul li a:hover, .seach-filter ul li a.hover, .seach-filter ul li ul li a.hover
+{
+	background:#806517!important;
+	color:#f8ffc7;
+	display:block;
+}
+
+.search-category-box{
+	clear: none;
+	padding:0;
+	maring: 0;
+	border: none;
+}
+
+.mod_hotel_reservation a.button-module, .mod_hotel_reservation span.button-module {
+    background: url("../images/check_btn.png") no-repeat; 
+}
+
+.mod_hotel_reservation a.button-module span, .mod_hotel_reservation span.button-module button {
+    background: url("../images/check_btn.png") no-repeat;
+}
+
+.mod_hotel_reservation a.button span, .mod_hotel_reservation span.button button, .mod_hotel_reservation span.button input, .mod_hotel_reservation del.button span {
+    background-color: transparent;
+    background-position: 100% 0;
+  
+}
+
+.mod_hotel_reservation span.button{
+	float: right; 
+}

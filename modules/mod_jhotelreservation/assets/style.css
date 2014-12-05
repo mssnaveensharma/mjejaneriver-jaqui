@@ -1,0 +1,157 @@
+.mod_hotel_reservation {
+	background-color: #F4F4EC;
+	border: 1px solid #E6E6D2;
+	width: 190px;
+	font-size: 10px;
+}
+
+.mod_hotel_reservation .tr_title_hotelreservation {
+	background-color: #D3D3BC;
+	font-size: 12px;
+	font-weight: bold;
+	font-family: Verdana, Arial, Helvetica, Sans-Serif;
+}
+
+.mod_hotel_reservation img {
+	border: 0 !important;
+	vertical-align: top;
+	margin-top: 1px;
+	background: none 0 0;
+}
+
+#jhotelreservation_hotel_id {
+	width: 120px;
+}
+
+.mod_hotel_reservation  a {
+	font-size: 11px;
+}
+
+.tr_title_hotelreservation  td {
+	padding: 2px 3px 5px 3px;;
+}
+
+.mod_hotel_reservation .td_title_hotelreservation {
+	font-size: 10px;
+	font-family: Verdana, Arial, Helvetica, Sans-Serif;
+}
+
+.mod_hotel_reservation input {
+	font-size: 10px;
+	font-family: Verdana, Arial, Helvetica, Sans-Serif;
+}
+
+.mod_hotel_reservation select {
+	font-size: 10px;
+	font-family: Verdana, Arial, Helvetica, Sans-Serif;
+}
+
+.btn_hotelreservation {
+	float: right;
+	font-size: 11px;
+	line-height: 18px;
+	background-color: #D3D3BC;
+	border: 1px solid #655665;
+	margin: 1px;
+	margin-left: 9px;
+	text-align: center;
+	color: #000;
+}
+
+/* hover state for form button divs */
+.btn_hotelreservation:hover,.btn_hotelreservation.default:hover {
+	margin: 0px;
+	margin-left: 8px;
+	border-width: 2px;
+}
+
+/* style for default button */
+.btn_hotelreservation.default {
+	border: 1px solid #8e8e4f;
+	float: left;
+}
+
+.btn_hotelreservation a {
+	font-size: 10px;
+	font-weight: bold;
+	font-family: verdana, arial, helvetica, sans-serif;
+	color: #000000;
+	border: 1px solid #ffffff;
+	text-decoration: none;
+	padding: 2px 5px;
+}
+
+/* hover state for the link in each form button */
+.btn_hotelreservation a:hover {
+	text-decoration: none;
+	color: #FF0000;
+}
+
+.mod_hotel_reservation input {
+	size: 10;
+	width: 70px;
+	font-size: 11px;
+	text-align: center;
+	font-family: Verdana, Arial, Helvetica, Sans-Serif;
+}
+
+.btn_general {
+	color: #000000;
+}
+
+.seach-filter {
+	background: -moz-linear-gradient(#FFFFFF, #F6F6F6) repeat scroll 0 0
+		transparent;
+	border: 1px solid #BEBEBE;
+	padding: 9px 13px;
+	margin: 16px 0;
+	overflow: hidden;
+	padding: 10px 15px;
+	-moz-border-radius: 5px 5px 5px 5px;
+}
+
+.seach-filter h3 {
+	font-size: 16px !important;
+	font-weight: bold;
+	line-height: 18px;
+	margin: -10px -15px 0 !important;
+	padding: 10px 15px;
+	border: none !important;
+	color: #111 !important;
+}
+
+.search-category-box {
+	border-top: 1px solid #BFBFBF;
+	clear: both;
+	margin: 0 -13px;
+	padding: 10px 13px;
+}
+
+.search-category-box h4 {
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.search-category-box ul {
+	float: left;
+	line-height: 20px;
+	list-style-type: none;
+	list-style-position: inside;
+	margin: 0 0 1.5em !important;
+	padding: 0;
+}
+
+.search-category-box a {
+	color: #0185CA;
+	text-decoration: none;
+}
+
+.search-category-box .selectedlink a {
+	background: url(../images/filter-arrow.png) no-repeat left 4px;
+	color: #000000;
+	padding-left: 10px;
+}
+
+.search-category-box .selectedlink a:hover {
+	text-decoration: line-through;
+}

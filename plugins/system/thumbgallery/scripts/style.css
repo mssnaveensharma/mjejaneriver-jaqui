@@ -1,0 +1,77 @@
+/*------------------------------------------------------------------------
+# plg_thumbgallery - Thumb Gallery Plugin
+# ------------------------------------------------------------------------
+# author    Jesús Vargas Garita
+# copyright Copyright (C) 2010 joomlahill.com. All Rights Reserved.
+# @license - http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+# Websites: http://www.joomlahill.com
+# Technical Support:  Forum - http://www.joomlahill.com/forum
+-------------------------------------------------------------------------*/
+
+.tg_holder {}
+.hor .tg_main,.hor .tg_thumbs {float:left;}
+.hor:after{clear:both;content:'.';height:0;display:block;}
+.tg_main {text-align:center;}
+.tg_main img {
+    -webkit-transition:all .4s ease-in-out;
+    -moz-transition:all .4s ease-in-out;
+    -o-transition:all .4s ease-in-out;
+    transition:all .4s ease-in-out;
+	max-width:100%;
+}
+.tg_thumbs {vertical-align:top;}
+.tg_thumbs img {cursor:pointer;float:left;max-width:100%;}
+.tg_thumbs img.firstinrow {margin-left:0!important;}
+.tg_main a:active, .tg_main a:focus {background-color:transparent !important;background-image:url('') !important;}
+.thumbslide {display:none;opacity:0;transition-duration:.5s;width:100%;}
+.thumbslide .th_row {clear:both;}
+.thumbslide img {}
+.slidepage{float:right;height:24px;padding:10px 0 0 0;margin:0;z-index:100}
+.slidepage .pages { height:24px; float:left; position:relative; z-index:0; overflow:hidden;}
+.slidepage ul{list-style:none;list-style-type:none;padding:0;left:0;margin:0;position:absolute;transition-duration:.3s;}
+.slidepage li, .slidepage span{
+	background-repeat: no-repeat;
+	border:none!important;
+	color: #666;
+	cursor: pointer;
+	display: block;
+	font-weight: bold;
+	height: 22px;
+	list-style: none;
+	line-height: 22px;
+	float: left;
+	margin: 0 1px 0 0!important;
+	text-align:center;
+	padding: 0!important;
+	position: relative;
+	z-index:5;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select:none;
+}
+.slidepage span.firstpage, .slidepage span.lastpage { width: 31px; }
+.slidepage span.prevpage, .slidepage span.nextpage{ width: 25px; }
+.slidepage li.pagenumber { background-position: -57px 0; width: 22px; }
+.slidepage li.pagenumber:hover, .slidepage li.pagenumber.activepagenumber { background-position: -57px -22px; }
+.slidepage span.firstpage { background-position: -1px 0; }
+.slidepage span.firstpage:hover { background-position: -1px -22px; }
+.slidepage span.prevpage {  background-position: -32px 0; }
+.slidepage span.prevpage:hover {  background-position: -32px -22px; }
+.slidepage span.nextpage { background-position: -79px 0; }
+.slidepage span.nextpage:hover { background-position: -79px -22px; }
+.slidepage span.lastpage { background-position: -104px 0; }
+.slidepage span.lastpage:hover { background-position: -104px -22px; }
+.slidepage.noimage li, .slidepage.noimage span{
+	border: 1px solid #666;
+	border-radius: 15px;
+}
+.slidepage.noimage span:hover, .slidepage.noimage span.activepagenumber {
+	background-color: #fffac3;
+}
+.slidepage li:hover, .slidepage li.activepagenumber {color: #000; }
+.slidepage.noimage li:hover, .slidepage.noimage li.activepagenumber { background-color: #fff799; }
+.slidepage .totalpages, .slidepage.noimage span.totalpages { background-image: none; padding-left: 3px; font-weight: normal; border: none; cursor: default; }
+.slidepage.noimage span.totalpages:hover, .slidepage span.totalpages:hover { background-color: none; background: none; }

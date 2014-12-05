@@ -1,0 +1,228 @@
+#special-offers-container {
+	background: #ffffff;
+}
+
+#special-offers-container #search-order {
+    line-height: 20px;
+    min-height: 47px;
+    padding: 10px;
+}
+
+.special-offers {
+	border-left: 1px solid #D8D8D8;
+	float: left;
+	font-size: 12px;
+}
+
+#special-search-result-container .special-offers .header_container
+	{
+	float: left;
+	padding: 5px 0;
+}
+
+#special-search-result-container .special-offers .header {
+	padding: 4px 2px 2px 0px;
+	background: none;
+}
+
+#special-search-result-container .special-offers h2 {
+	color: #333333;
+	display: block;
+	font-size: 12px;
+	font-weight: normal;
+	height: auto;
+	line-height: 12px;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+}
+
+
+
+#special-search-result-container .special-offers dl.special-search-result{
+	float: none;
+}
+
+.special-offers .offer-container{
+	padding: 15px 5px 0px 20px;
+}
+
+.offer-container{
+	padding: 15px 15px 30px 15px;
+}
+
+.special-offers .offer-container.featured{
+	background: #E0EEF0;
+	background: -webkit-gradient(linear, left top, left bottom, from(#E0EEF0),to(#CFE4E8) );
+	background: -webkit-linear-gradient(top, #E0EEF0, #CFE4E8);
+	background: -moz-linear-gradient(top, #E0EEF0, #CFE4E8);
+	background: linear-gradient(top, #E0EEF0, #CFE4E8);
+}
+
+#special-search-result-container .special-offers .offer-container b a
+	{
+	display: block;
+	max-width: 300px;
+	width: 300px;
+}
+
+#book-flap-wrapper,#book-flap {
+	float: right;
+}
+
+.special-offers .hotel-name {
+	padding: 0 0 5px 0;
+}
+
+.special-offers dd.utility-nav {
+	position: relative;
+}
+
+.special-offers .sp_offers{
+	float: right !important;
+	width: 62%;
+}
+
+.special-offers .hotel-details{
+	float: left;
+	width: 35%;
+	padding: 0 0 10px 0;
+}
+
+.special-offers .small-arrow {
+	background: none;
+	text-align: left;
+}
+
+.special-offers .small-arrow a {
+	font-size: 10px;
+	background: none;
+	padding: 3px 1px 0 0;
+	text-decoration: underline;
+}
+
+.special-offers dl.special-search-result dt,dl.special-search-result dd{
+	margin: 0 0 5px 0 !important;
+	font-size: 12px;
+}
+
+.special-offers .thumbnail {
+	box-shadow: 0 2px 5px #969696;
+	padding: 2px;
+	background-color: #FEFEFE;
+}
+
+.special-offers .thumbnail a{
+	
+}
+
+.special-offers .thumbnail img{
+	width: 100%;
+}
+
+.special-offers dl.special-search-result {
+	margin: 0px;
+}
+
+/* Search Module */
+#endeca-search-container,#endeca-search-container #hbSearchModule,#endeca-search-container #offerFinder
+	{
+	float: left;
+}
+
+
+.offer-container .sp_offers .offerDescription {
+	padding: 0 0 20px 0;
+}
+
+.special-offers h3.offer-title{
+	margin: 0 0 10px 0;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+.offer-container .offer-title h3{
+	font-size: 18px!important;
+}
+
+.offer-container .sp_offers .offer-date-interval {
+	margin: 10px 0 0;
+}
+
+.offer-container .sp_offers .splStayDate {
+	_margin: 10px 0 10px 0;
+	*margin: 10px 0 10px 0;
+}
+
+.offer-container .sp_offers .hbOfferSeparator {
+	margin: 0px 0 0;
+	padding: 10px 0 30px 0;
+}
+
+.destinationField #searchTerms {
+	color: #999999;
+	font-size: 11px;
+	padding-top: 2px;
+}
+
+.dateSelector .dateIn {
+	padding-top: 0 !important;
+}
+
+#check-in-date,#check-out-date {
+	width: 88px !important;
+	font-size: 11px !important;
+}
+
+.calendarIcon {
+	cursor: pointer;
+	margin-left: 5px;
+}
+
+.dateSelector .dateOut {
+	padding-top: 10 !important;
+}
+
+.groupCorpNum {
+	float: left;
+	margin-top: 5px;
+}
+
+.offers-divider{
+	background-color: #D8D8D8;
+    clear: both;
+    font-size: 1px;
+    height: 1px;
+    line-height: 1% !important;
+    margin: 0 0 15px;
+}
+
+.offer-container .package-details{
+	margin-bottom: 5px;
+}
+
+.offer-container .arrival-options-details{
+	margin-bottom: 5px;
+	
+}
+
+.offer-image-gallery {
+	width: 100%;
+	margin: 20px 0;
+}
+
+.offer-image-gallery .image-preview-cnt img {
+	height: 225px;
+	width: 300px;
+	border: 1px solid black !important;
+}
+
+.offer-image-gallery .image-prv-cnt {
+	margin: 0 0 3px 3px;
+	width: 32%;
+	border: 1px solid black !important;
+}
+
+.offer-image-gallery .image-prv {
+	width: 100%;
+}

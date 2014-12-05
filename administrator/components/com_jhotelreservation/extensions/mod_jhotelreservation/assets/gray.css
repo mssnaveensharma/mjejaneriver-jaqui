@@ -1,0 +1,12 @@
+.search-nav {
+	margin: 10px 0px 8px;
+}
+
+.divider td {
+	border-bottom: 1px solid #CFCFCF;
+	padding-top: 6px;
+}
+
+.mod_hotel_reservation span.button{
+	float: right; 
+}

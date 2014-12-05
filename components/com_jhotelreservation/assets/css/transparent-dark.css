@@ -1,0 +1,276 @@
+.hotel_reservation 		{ font-family: Arial, Helvetica, sans-serif; font-size:12px; color: #333333; }
+.hotel_reservation td	{ font-family: Arial, Helvetica, sans-serif; font-size:12px;}
+.hotel_reservation th	{ font-family: Arial, Helvetica, sans-serif; font-size:12px; color: #333333;}
+.hotel_reservation hr  	{   color:#e0e1e1; height:1px; margin-top:12px; margin-bottom:12px;}
+.hotel_reservation p 	{   margin:8px 0px 8px 0px;}
+
+.hotel_reservation a:link {color: #0083C8;}
+
+.hotel_reservation input{
+	border: none;
+}
+
+.hotel_reservation_steps{
+	margin-bottom: 20px;
+}
+
+.hotel_reservation  input, .hotel_reservation select {
+    font-family: Tahoma,Arial,Helvetica,Sans-Serif;
+    font-size: 12px;
+}
+.hotel_reservation_steps img, .hotel_reservation  img{
+	border: none !important;
+}
+
+.admintable {
+	margin-top: 10px;
+}
+
+.admintable td{
+	font-size: 11px;
+	color: #333 !important;
+}
+
+.hotel_reservation_steps  table td{
+	color: #C9C9AD !important;
+	padding: 5px;
+}
+
+.room_preferences_options{
+	margin-top: 20px;
+}
+
+.room_preferences_options td{
+	color: #333333;
+}
+
+.room_preferences_header td{
+	padding-bottom: 10px;
+	font-size: 14px;
+}
+.btn_normal_mic
+{
+	color				:#050;   
+	font				:bold 10px'arial',helvetica,sans-serif;   
+	background-color	:#D2D2B9;  
+	border				:1px solid;  
+	width				:100px;
+	height				:20px;
+}
+
+.btn_normal_mare
+{
+	color				:#050;   
+	font				:bold 12px'arial',helvetica,sans-serif;   
+	background-color	:#D2D2B9;  
+	border				:1px solid;  
+	width				:130px;
+	height				:20px;
+}
+
+.header_line {
+	padding: 7px 0px 7px 5px;
+	background-color: #D2D2B8;
+	margin-top: 15px;
+}
+.header_line strong {padding:5px 5px 2px 5px; margin:0px; font:bold 13px arial; color:#000000;}
+
+.btn_general
+{
+	float: right;
+	font-size: 10px;
+	line-height: 18px;
+	font-weight: bold;
+	background-color: #BFBF9B;
+	border: 1px solid #666666;
+	margin: 1px;
+	margin-left: 9px;
+}
+/* hover state for form button divs */
+.btn_general:hover, .btn_general.default:hover {
+	margin: 0px;
+	margin-left: 8px;
+	border-width: 2px;
+}
+
+/* style for default button */
+.btn_general.default {
+	border: 1px solid #8e8e4f;
+	float:left;
+}
+
+.btn_general a {
+	font-size: 10px;
+	font-weight: bold;
+	font-family:verdana, arial, helvetica, sans-serif;
+	color: #333333 !important;
+	border: 1px solid #ffffff;
+	text-decoration: none;
+	padding: 0 5px;
+	display: block;
+}
+
+/* hover state for the link in each form button */
+.btn_general a:hover {
+	text-decoration: none;
+	color: #FF0000;
+}
+
+
+.div_box
+{
+	font-family			:Times New Roman;
+	font-size			:14px;
+	padding				:10px;
+	border				:3px solid gray;
+	margin				:1px;
+	background-color	:#DDDDDD;
+	width				:99%;
+	text-align			:left;
+}
+
+td.link{
+	background: url(../img/radio_link.png) no-repeat center;
+}
+
+td.link .first{
+	background: url(../img/radio_link.png) no-repeat center center;
+}
+
+div.img_btn
+{
+	background: url(../img/radio_button.png) no-repeat center;
+	border :0; 
+	width: 9px;
+	height: 9px;
+}
+
+div.img_btn_on
+{
+	background: url(../img/radio_button_on.png) no-repeat center;
+	border :0; 
+	width: 9px;
+	height: 9px;
+}
+
+img.img_btn_line
+{
+	width				:50px;
+	height				:4px;
+	border				:0;
+}
+
+.text_btn
+{
+	font				:bold 12px'trebuchet ms',helvetica,sans-serif;   
+}
+
+.text_btn_on
+{
+	font				:bold 15px'trebuchet ms',helvetica,sans-serif;   
+	color				:#575739;  
+	border				:0px solid; 
+}
+
+.tr_title
+{
+	background-color	:#BBBBBB;
+	text-align			:center;
+	vertical-align		:middle;
+}
+
+.tr_calendar{
+	background-color	:#D2D2B9;
+	height				:25px;
+}
+.tr_header{
+	background-color	:#DFDFCE;
+	cellspacing			:0px;
+	cellpadding			:0px;
+}
+.table_info{
+	background-color	:#FFFFF;
+	height				:auto;
+	border 				:0px;
+	cellpadding			:0px;
+	cellspacing			:3px;
+}
+.table_data{
+	background-color	:#FFFFF;
+	height				:auto;
+	border 				:0px;
+	cellpadding			:0px;
+	cellspacing			:3px;
+}
+
+
+.alert_message{
+	font-size			:12px;
+	color				:#FF0000;
+	text-align			:center;
+	padding-bottom		:20px;
+}
+.mand{
+	color				:#FF0000;
+	font-weight			:bold;
+}
+.tr_preferences{
+	background-color	:#D2D2B9;
+	height				:25px;
+	padding-left		:5px;
+	padding-right		:5px;
+}
+.tr_calendar.td{
+	font-weight			:bold;
+	font-size			:12px;
+	color:				:black;
+	font-family			:Arial;
+}
+
+.table_calendar{
+	border: 1px solid #D2D2B9;
+	background-color: #F1F1E5;
+}
+
+.table_calendar td{
+	background-color: #F1F1E5;
+}
+
+.tdCalendar1{
+	padding-left:5px;
+	padding-right:5px;
+}
+.tdCalendar2{
+	padding-left:5px;
+	padding-right:5px;
+}
+
+.button_holder{
+	background: #fff;
+}
+
+.DIV_BUTTONS{
+	margin-top: 20px;
+}
+
+.hotel-info{
+	font-size: 12px;
+	margin: 0 0 0 10px;
+}
+
+.hotel-title{
+	font-weight: bold;
+	
+}
+
+.hotel-location{
+	font-size: 11px;
+}
+
+.hotel-description{
+	margin-top: 10px;
+}
+
+.hotel-description img{
+	margin: 4px 15px 5px 0;	
+}

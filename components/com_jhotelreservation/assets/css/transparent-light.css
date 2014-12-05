@@ -1,0 +1,415 @@
+.hotel_reservation 		{ font-family: Arial, Helvetica, sans-serif; font-size:12px; color: #DAD8A9; padding: 0px; background-color: transparent;}
+.hotel_reservation td	{ font-family: Arial, Helvetica, sans-serif; font-size:12px; color: #DAD8A9 !important;}
+.hotel_reservation th	{ font-family: Arial, Helvetica, sans-serif; font-size:12px; color: #333;}
+.hotel_reservation hr  	{ color:#e0e1e1; height:1px; margin-top:12px; margin-bottom:12px;}
+.hotel_reservation p 	{ margin:8px 0px 8px 0px;}
+
+.hotel_reservation a:link {color: #A98A3D;}
+
+.hotel_reservation input{
+	border: none;
+}
+
+.reservation_details td, .reservation_details th{
+	font-size:12px; 
+	color: #333 !important;
+}
+.admintable {
+	margin-top: 10px;
+}
+
+.admintable td{
+	color: #333 !important;
+}
+
+.hotel_reservation_steps  table td{
+	color: #DAD8A9 !important;
+	padding: 10px;
+}
+
+.room_preferences_options{
+	margin-top: 20px;
+}
+
+.room_preferences_options td{
+	color: #DAD8A9;
+}
+
+.room_preferences_header td{
+	padding-bottom: 10px;
+	font-size: 14px;
+}
+.btn_normal_mic
+{
+	color				:#050;   
+	font				:bold 10px'arial',helvetica,sans-serif;   
+	background-color	:#D2D2B9;  
+	border				:1px solid;  
+	width				:100px;
+	height				:20px;
+}
+
+.btn_normal_mare
+{
+	color				:#050;   
+	font				:bold 12px'arial',helvetica,sans-serif;   
+	background-color	:#D2D2B9;  
+	border				:1px solid;  
+	width				:130px;
+	height				:20px;
+}
+
+.header_line {
+	background: url(img/hor_line.gif) repeat-x right;
+	padding:10px 0px 10px 0px;
+	margin-top: 15px;
+}
+
+.header_line strong { background:#fff; padding:2px 4px; margin:0px; color:#333333; }
+
+.btn_general
+{
+	float: right;
+	font-size: 10px;
+	line-height: 18px;
+	font-weight: bold;
+	background-color: #BFBF9B;
+	border: 1px solid #666666;
+	margin: 1px;
+	margin-left: 9px;
+}
+/* hover state for form button divs */
+.btn_general:hover, .btn_general.default:hover {
+	margin: 0px;
+	margin-left: 8px;
+	border-width: 2px;
+}
+
+/* style for default button */
+.btn_general.default {
+	border: 1px solid #8e8e4f;
+	float:left;
+}
+
+.btn_general a {
+	font-size: 10px;
+	font-weight: bold;
+	font-family:verdana, arial, helvetica, sans-serif;
+	color: #333 !important;
+	border: 1px solid #ffffff;
+	text-decoration: none;
+	padding: 0px 5px;
+	display: block;
+}
+
+/* hover state for the link in each form button */
+.btn_general a:hover {
+	text-decoration: none;
+	color: #FF0000;
+}
+
+.btn_general_disabled
+{
+	float: right;
+	font-size: 10px;
+	line-height: 18px;
+	font-weight: bold;
+	background-color: #CFCFAD;
+	border: 1px solid #666666;
+	margin: 1px;
+} 
+
+.btn_general_disabled a:link{
+	color: #808080;
+}
+
+/* hover state for form button divs */
+.btn_general_disabled:hover, .btn_general_disabled.default:hover {
+	margin: 0px;
+	border-width: 2px;
+}
+
+/* style for default button */
+.btn_general_disabled.default {
+	border: 1px solid #8e8e4f;
+	float:left;
+}
+
+.btn_general_disabled a {
+	font-size: 10px;
+	font-weight: bold;
+	font-family:verdana, arial, helvetica, sans-serif;
+	color: #DDDDDD;
+	border: 1px solid #ffffff;
+	text-decoration: none;
+	padding: 0px 5px;
+	display: block;
+}
+
+/* hover state for the link in each form button */
+.btn_general_disabled a:hover {
+	text-decoration: none;
+	color: #808080;
+}
+
+.div_box
+{
+	font-family			:Times New Roman;
+	font-size			:14px;
+	padding				:10px;
+	border				:3px solid gray;
+	margin				:1px;
+	background-color	:#DDDDDD;
+	width				:99%;
+	text-align			:left;
+}
+
+td.link{
+	background: url(../img/radio_link.png) repeat-x center;
+}
+
+td.link .first{
+	background: url(../img/radio_link.png) repeat-x center center;
+}
+
+div.img_btn
+{
+	background: url(../img/radio_button.png) no-repeat center;
+	border :0; 
+	width: 9px;
+	height: 9px;
+}
+
+div.img_btn_on
+{
+	background: url(../img/radio_button_on.png) no-repeat center;
+	border :0; 
+	width: 9px;
+	height: 9px;
+}
+
+
+img.img_btn_line
+{
+	width				:50px;
+	height				:4px;
+	border				:0;
+}
+
+.text_btn
+{
+	font				:bold 12px'trebuchet ms',helvetica,sans-serif;   
+	color				:#808053;  
+}
+
+.text_btn_on
+{
+	font				:bold 15px'trebuchet ms',helvetica,sans-serif;   
+	color				:#DAD8A9;  
+	border				:0px solid; 
+}
+
+.tr_title
+{
+	background-color	:#BBBBBB;
+	text-align			:center;
+	vertical-align		:middle;
+}
+
+.tr_calendar{
+	background-color	:#D2D2B9;
+	height				:25px;
+}
+.tr_header{
+	background-color	:#E2D6BC;
+	cellspacing			:0px;
+	cellpadding			:0px;
+}
+
+.table_info{
+	background-color	:#F2ECDE;
+	height				:auto;
+	border 				:0px;
+	cellpadding			:0px;
+	cellspacing			:3px;
+	border				:1px solid #D2D2B9;
+	color: #333 !important;
+}
+
+.table_info th, .table_info td{
+	color: #333 !important;
+}
+
+.table_info td a {
+	color: #2A5DB0 !important;
+}
+
+.table_data{
+	background-color	:#FFFFF;
+	height				:auto;
+	border 				:0px;
+	/*filter:alpha(opacity=70);
+	 CSS3 standard 
+	opacity:0.7;*/
+}
+
+.table_data th{
+	color: #333;
+}
+
+.alert_message{
+	font-size			:12px;
+	color				:#FF0000;
+	text-align			:center;
+	padding-bottom		:20px;
+}
+.mand{
+	color				:#FF0000;
+	font-weight			:bold;
+}
+.tr_preferences{
+	background-color	:#D2D2B9;
+	height				:25px;
+	padding-left		:5px;
+	padding-right		:5px;
+}
+.tr_calendar.td{
+	font-weight			:bold;
+	font-size			:12px;
+	color:				:black;
+	font-family			:Arial;
+}
+
+.table_calendar{
+	border: 1px solid #D2D2B9;
+	background-color: #F1F1E5;
+	color: #333333;
+}
+
+.table_calendar td{
+	background-color: #F1F1E5;
+}
+
+.tdCalendar1{
+	padding-left:5px;
+	padding-right:5px;
+}
+.tdCalendar2{
+	padding-left:5px;
+	padding-right:5px;
+}
+
+.button_holder{
+	background: #fff;
+}
+
+.DIV_BUTTONS{
+	margin-top: 20px;
+}
+
+.rsv_dtls_container td{
+	background-color: none;
+	color: #333;
+	/*background-color: #F1F1E5;*/	
+}
+
+.rsv_dtls_main_header {
+	background-color: #D2D2B9;
+}
+
+.rsv_dtls_header {
+	background-color: #DADAC5;
+}
+
+.rsv_dtls_total_price{
+	background-color: #C6C6A6;
+}
+
+.rsv_dtls_billing{
+	background-color: #D2D2B9;
+}
+
+.rsv_dtls_payment{
+	background-color: #D2D2B9;
+}
+
+.confirmation_card_information{
+	background-color: #D2D2B9;
+}
+
+.confirmation_total{
+	background-color: #D2D2B9;
+}
+
+img.calendar{
+	vertical-align: top;
+}
+
+.link_more_packages{	
+	display:none;
+}
+
+.btn_general_disabled a{
+	color: #6D6D6D!important;
+}
+
+.table_arrival_options{
+	background-color: transparent;
+}
+
+.rsv_dtls_hotel_container td{
+	color: #333;
+}
+
+.hotel_details_container{
+	padding: 10px;
+}
+
+.table_arrival_options{
+	background-color: transparent;
+}
+
+.hotel-item h3, .hotel-item h4{
+	color: #333 !important;
+}
+
+.hotel-info:hover{
+	background: none;
+}
+
+#search-container h3 {
+    background: url("../img/modern/search_header.jpg") repeat-x;
+}
+
+.reservation-details-holder h3 {
+     background: url("../img/modern/search_header.jpg") repeat-x;
+}
+
+.reservation-details {
+    background: url("../img/modern/search_order_bg.jpg") repeat-x;
+}
+
+
+#search-order {
+    background: url("../img/modern/search_order_bg.jpg") repeat-x scroll;
+}
+
+.hotel-details .hotel-price, .offer-price {
+    background: url("../img/modern/hotel_price_box.png") no-repeat;
+}
+
+.offer-price {
+    background: url("../img/modern/hotel_price_box_offers.png") no-repeat;
+}
+
+.hotel_details_container input{
+	border: 1px solid #888 !important;
+}
+
+.hotel-recommanded {
+    background: url("../img/modern/recomanded_box.png") no-repeat;
+    color: #333;
+    text-shadow: 0 1px 0 #FFF;
+    padding: 5px 20px 3px 20px;
+}
+ 

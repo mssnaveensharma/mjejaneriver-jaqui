@@ -1,0 +1,129 @@
+.mod_hotel_reservation {
+	background: url('../images/reservation_bg.png') no-repeat;
+	color: #F2F1E1 !important;
+	border: none;
+}
+.mod_hotel_reservation  td{
+color: #F2F1E1 !important;
+}
+.mod_hotel_reservation table {
+    margin: 0 7px;
+    width: 94%;
+}
+
+.mod_hotel_reservation td{
+	padding: 2px 0;
+}
+
+.mod_hotel_reservation input,.mod_hotel_reservation select {
+	font-family: Tahoma, Arial, Helvetica, Sans-Serif;
+	font-size: 12px;
+	border: 1px solid #787878 !important;
+	margin: 0 !important;
+}
+
+.mod_hotel_reservation input{
+	width: 90px!important;
+}
+
+.tr_title_hotelreservation{
+	display: none;
+}
+.tr_title_hotelreservation td {
+	font-size: 17px;
+	text-shadow: 0 1px 0 #0B0807;
+	padding: 5px 0 5px 0 !important;
+}
+
+.mod_hotel_reservation img {
+	border: 0 !important;
+	vertical-align: top;
+	margin-top: 1px;
+	background: none 0 0;
+	text-indent: -3000px;
+}
+
+.mod_hotel_reservation  a,.mod_hotel_reservation  a:visited {
+	color: #FCE1A3;
+}
+
+#jhotelreservation_hotel_id {
+	width: 145px;
+}
+
+.btn_hotelreservation {
+	background: url('../images/check2_btn.png') no-repeat;
+	height: 20px;
+	width: 116px;
+	margin-top: 10px;
+	text-indent: -3000px;
+}
+
+.btn_normal {
+	color: #050;
+	font: bold 12px 'trebuchet ms', helvetica, sans-serif;
+	background-color: #fed;
+	border: 1px solid;
+	width: 150px;
+	padding: 0px 0px;
+}
+
+.tr_title {
+	background-color: #BBBBBB;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.search-nav{
+	margin-top:0;
+	font-size: 11px;
+}
+.search-nav input{
+	width: 180px !important;
+	padding: 0px;
+}
+
+.seach-filter{
+	background-color: transparent!important;
+}
+
+.seach-filter h3, .seach-filter h4{
+	background: none;
+	color: #DDD !important;
+	text-shadow: none;
+}
+
+.seach-filter a{
+	color: #AB6F3F!important;
+}
+
+.search-btn a{
+	background: none!important;
+	padding: 0 !important;
+}
+
+
+.mod_hotel_reservation a.button-module, .mod_hotel_reservation span.button-module {
+    background: url("../images/check2_btn.png") no-repeat; 
+}
+
+.mod_hotel_reservation a.button-module span, .mod_hotel_reservation span.button-module button {
+    background: url("../images/check2_btn.png") no-repeat;
+}
+
+.mod_hotel_reservation a.button span, .mod_hotel_reservation span.button button, .mod_hotel_reservation span.button input, .mod_hotel_reservation del.button span {
+    background-color: transparent;
+    background-position: 100% 0;
+    height: 20px;
+	line-height: 20px!important; 
+	color: #333!important;
+	font-weight: normal !important;
+}
+
+.mod_hotel_reservation span.button{
+	margin-top: 5px;
+}
+
+.search-category-box{
+	border: none!important;
+}

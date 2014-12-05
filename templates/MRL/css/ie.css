@@ -1,0 +1,31 @@
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400);
+@import url(//fonts.googleapis.com/css?family=Open+Sans:300);
+@import url(//fonts.googleapis.com/css?family=Open+Sans:700);
+
+@import url(//fonts.googleapis.com/css?family=Open+Sans+Condensed:700);
+@import url(//fonts.googleapis.com/css?family=Oswald:300);
+@import url(//fonts.googleapis.com/css?family=Oswald:400);
+
+
+.num_section, .more_btn_circle, .icon_container{ behavior:url(js/PIE.htc); position:relative;}
+#back-top { behavior:url(js/PIE.htc);}
+
+a.magnifier2:hover .zoom{
+	display: block;
+}
+a.magnifier2 .zoom, .bottom_p{
+	display: none;
+}
+body{
+	min-width: 1143px;
+}
+
+#contact-form input,
+#contact-form textarea {
+	overflow: hidden;
+}
+
+h1{
+	top: 50px;
+	
+}

@@ -1,0 +1,469 @@
+.hotel_reservation {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #EBE4D8;
+	padding: 0px;
+	background-color: transparent!important; 
+}
+
+.hotel_reservation td {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #EBE4D8
+}
+
+.hotel_reservation th {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333333;
+}
+
+.hotel_reservation hr {
+	color: #e0e1e1;
+	height: 1px;
+	margin-top: 12px;
+	margin-bottom: 12px;
+}
+
+.hotel_reservation p {
+	margin: 8px 0px 8px 0px;
+	color: #EBE4D8
+}
+
+.hotel_reservation  h2 {
+	color: #EBE4D8
+}
+
+.hotel_reservation a:link,.hotel_reservation  a:visited {
+	color: #FCE1A3;
+}
+
+.hotel_reservation table {
+	border-spacing: 0;
+	padding: 0;
+}
+
+.hotel_reservation_steps img,.hotel_reservation  img {
+	border: none !important;
+}
+
+.hotel_reservation_steps {
+	margin-bottom: 20px;
+}
+
+.nopad {
+	background-color: #4B3E2E
+}
+
+.admintable {
+	margin-top: 10px;
+}
+
+.admintable td {
+	color: #EBE4D8;
+}
+
+.admintable #table_parameters td {
+	color: #333333;
+}
+
+#td_data_calendar_1 {
+	color: #333333;
+}
+
+#td_data_calendar_2 {
+	color: #333333;
+}
+
+#table_parameters   a:link,#table_parameters    a:visited {
+	color: #575739;
+}
+
+.hotel_reservation_steps  table td {
+	color: #EBE4D8 !important;
+	background-color: #4B3E2E;
+	padding: 10px;
+}
+
+.room_preferences_options {
+	margin-top: 20px;
+}
+
+.room_preferences_options td {
+	color: #EBE4D8;
+}
+
+.room_preferences_header td {
+	padding-bottom: 10px;
+	font-size: 14px;
+}
+
+.btn_normal_mic {
+	color: #050;
+	font: bold 10px 'arial', helvetica, sans-serif;
+	background-color: #D2D2B9;
+	border: 1px solid;
+	width: 100px;
+	height: 20px;
+}
+
+.btn_normal_mare {
+	color: #050;
+	font: bold 12px 'arial', helvetica, sans-serif;
+	background-color: #D2D2B9;
+	border: 1px solid;
+	width: 130px;
+	height: 20px;
+}
+
+.header_line {
+	background: url(img/hor_line.gif) repeat-x center;
+	padding: 5px 0px 5px 0px;
+	margin-top: 15px;
+}
+
+.header_line strong {
+	background: #4B3E2E;
+	padding: 5px 5px 0px 0px;
+	margin: 0px;
+	font: bold 13px arial;
+	color: #EAE9CD;
+}
+
+.btn_general {
+	float: right;
+	font-size: 10px;
+	line-height: 18px;
+	font-weight: bold;
+	background-color: #BFBF9B;
+	border: 1px solid #666666;
+	margin: 1px;
+}
+/* hover state for form button divs */
+.btn_general:hover,.btn_general.default:hover {
+	margin: 0px;
+	border-width: 2px;
+}
+
+/* style for default button */
+.btn_general.default {
+	border: 1px solid #8e8e4f;
+	float: left;
+}
+
+.btn_general a {
+	font-size: 10px;
+	font-weight: bold;
+	font-family: verdana, arial, helvetica, sans-serif;
+	color: #333 ! important;
+	border: 1px solid #ffffff;
+	text-decoration: none;
+	padding: 0px 5px;
+	display: block;
+	line-height: 18px;
+}
+
+/* hover state for the link in each form button */
+.btn_general a:hover {
+	text-decoration: none;
+	color: #FF0000;
+}
+
+.div_box {
+	font-family: Times New Roman;
+	font-size: 14px;
+	padding: 10px;
+	border: 3px solid gray;
+	margin: 1px;
+	background-color: #DDDDDD;
+	width: 99%;
+	text-align: left;
+}
+
+td.link {
+	background: url(../img/radio_link.png) no-repeat center;
+}
+
+td.link .first {
+	background: url(../img/radio_link.png) no-repeat center center;
+}
+
+div.img_btn {
+	background: url(../img/radio_button.png) no-repeat center;
+	border: 0;
+	width: 9px;
+	height: 9px;
+}
+
+div.img_btn_on {
+	background: url(../img/radio_button_on_dark.png) no-repeat center;
+	border: 0;
+	width: 9px;
+	height: 9px;
+}
+
+img.img_btn_line {
+	width: 50px;
+	height: 4px;
+	border: 0;
+}
+
+.text_btn {
+	font: bold 12px 'trebuchet ms', helvetica, sans-serif;
+}
+
+.text_btn_on {
+	font: bold 12px 'trebuchet ms', helvetica, sans-serif;
+	color: #DDAA55;
+	border: 0px solid;
+}
+
+.tr_title {
+	background-color: #BBBBBB;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.tr_calendar {
+	background-color: #D2D2B9;
+	height: 25px;
+}
+
+.tr_header {
+	background-color: #D2D2B9;
+}
+
+.table_info {
+	background-color: #F1F1E5;
+	height: auto;
+	border: 0px;
+	color: #333333 !important;
+	border: 1px solid #D2D2B9;
+	'
+}
+
+.table_info p {
+	
+}
+
+.table_info td {
+	color: #333333 !important;
+}
+
+.table_info td a {
+	color: #2A5DB0 !important;
+}
+
+.table_data {
+	background-color: #4B3E2E;
+	height: auto;
+	border: 0px;
+}
+
+.alert_message {
+	font-size: 12px;
+	color: #FF0000;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.mand {
+	color: #FF0000;
+	font-weight: bold;
+}
+
+.tr_preferences {
+	background-color: #D2D2B9;
+	height: 25px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.tr_calendar.td {
+	font-weight: bold;
+	font-size: 12px;
+	color: :black;
+	font-family: Arial;
+}
+
+.reservation_period {
+	position: relative;
+	background-color: #F1F1E5 !important;
+	color: #333333;
+}
+
+.reservation_period td {
+	background-color: #F1F1E5 !important;
+	color: #333333;
+}
+
+.table_calendar {
+	border: 1px solid #D2D2B9;
+	background-color: #F1F1E5;
+	color: #333333;
+}
+
+.table_calendar td {
+	background-color: #F1F1E5 !important;
+	color: #333333 !important;
+}
+
+.tdCalendar1 {
+	color: #333;
+}
+
+.tdCalendar1 td {
+	color: #333;
+}
+
+.tdCalendar2 {
+	
+}
+
+.tdCalendar2 td {
+	color: #333;
+}
+
+.button_holder {
+	background: #fff;
+}
+
+.DIV_BUTTONS {
+	margin-top: 20px;
+}
+
+.TOTAL_INFO td {
+	background-color: #EBE4D8;
+	color: #333333;
+}
+
+.ROOM_INFO td {
+	background-color: #EBE4D8;
+	color: #333333;
+}
+
+.hotel-info {
+	font-size: 12px;
+	margin: 0 0 0 10px;
+}
+
+.hotel-title {
+	font-weight: bold;
+}
+
+.hotel-location {
+	font-size: 11px;
+}
+
+.hotel-description {
+	margin-top: 10px;
+}
+
+.hotel-description img {
+	margin: 4px 15px 5px 0;
+}
+
+.link_more_packages {
+	display: none;
+}
+
+.rsv_dtls_container td {
+	background-color: none;
+	color: #333;
+	/*background-color: #F1F1E5;*/
+}
+
+.room-description p {
+	color: #222222;
+}
+
+.rsv_dtls_main_header {
+	background-color: #D2D2B9;
+}
+
+.rsv_dtls_header {
+	background-color: #DADAC5;
+}
+
+.rsv_dtls_total_price {
+	background-color: #C6C6A6;
+}
+
+.rsv_dtls_billing {
+	background-color: #D2D2B9;
+}
+
+.rsv_dtls_payment {
+	background-color: #D2D2B9;
+}
+
+.confirmation_card_information {
+	background-color: #D2D2B9;
+}
+
+.confirmation_total {
+	background-color: #D2D2B9;
+}
+
+img.calendar {
+	vertical-align: top;
+}
+
+.btn_general_disabled a {
+	color: #6D6D6D !important;
+}
+
+.hotel_details_container{
+	padding: 10px;
+}
+
+
+.table_arrival_options{
+	background-color: transparent;
+}
+
+.rsv_dtls_hotel_container{
+	color: #333;
+}
+
+.rsv_dtls_hotel_container td{
+	color: #333;
+}
+
+.hotel-info:hover{
+	background: none;
+}
+
+
+#search-container h3 {
+    background: url("../img/dark/search_header.jpg") repeat-x;
+    text-shadow: 0 -1px 0 #DDD;
+    color: #191205;
+}
+
+.reservation-details-holder h3 {
+     background: url("../img/dark/header_search.jpg") repeat-x;
+}
+
+.reservation-details {
+    background: url("../img/dark/search_order_bg.jpg") repeat-x;
+}
+
+#search-order {
+    background: url("../img/dark/search_order_bg.jpg") repeat-x;
+}
+
+.hotel-details .hotel-price, .offer-price {
+    background: url("../img/dark/hotel_price_box.png") no-repeat;
+}
+
+.offer-price {
+    background: url("../img/dark/hotel_price_box_offers.png") no-repeat;
+}
+
+.hotel-recommanded {
+    background: url("../img/dark/recomanded_box.png") no-repeat;
+    color: #333;
+    text-shadow: 0 1px 0 #FFF;
+    padding: 5px 20px 3px 20px;
+}
