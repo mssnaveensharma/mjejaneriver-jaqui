@@ -45,6 +45,11 @@ $doc->addStyleSheet('templates/' . $this->template . '/css/template.css');
 // Load optional RTL Bootstrap CSS
 JHtml::_('bootstrap.loadCss', false, $this->direction);
 
+/*getting alias*/
+$menu = &JSite::getMenu();
+$active   = $menu->getActive();
+$alias = $active->alias;
+
 // Adjusting content width
 if ($this->countModules('position-7') && $this->countModules('position-8'))
 {
@@ -79,6 +84,7 @@ else
 ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>" dir="<?php echo $this->direction; ?>">
+
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<jdoc:include type="head" />
@@ -94,21 +100,27 @@ else
 	<!-- my css -->
 
 	 <link rel="stylesheet" href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/css/style.css">
-	  <script src="js/jquery.js"></script>
+	 <link rel="stylesheet" href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/css/style-slick.css">
+	 <link rel="stylesheet" href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/css/slicknav.css">
+	  
+	  	   <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+	 
+
 	  <script src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/js/jquery-migrate-1.1.1.js"></script>
 	  <script src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/js/jquery.easing.1.3.js"></script>
-	  <script src="js/scroll_to_top.js"></script>
-	 <script src="js/script.js"></script>
-	  <script src="js/jquery.equalheights.js"></script>
-	  <script src="js/superfish.js"></script>
-	  <script src="js/jquery.mobilemenu.js"></script>
-	  <script src="js/touchTouch.jquery.js"></script>
+	 
 	  <script src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/js/jquery.tools.min.js"></script>
 
 	  <!-- font-awesome font -->
 	  <link rel="stylesheet" href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/font/font-awesome.css" type="text/css" media="screen">
 	  <!-- fontello font -->
 
+
+
+
+
+	   <script src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/js/jquery.slicknav.js"></script>
+	  
 	  <script src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/js/camera.js"></script>
 	  <!--[if (gt IE 9)|!(IE)]><!-->
 	  <script src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/js/jquery.mobile.customized.min.js"></script>
@@ -126,29 +138,33 @@ else
 			<script src="js/html5shiv.js"></script>
 		<link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
 	 <![endif]-->
-<?php if($itemid == 110){ ?>
-	 <!-- jQuery library (served from Google) -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-<!-- bxSlider Javascript file -->
-<script src="http://bxslider.com/lib/jquery.bxslider.js"></script>
-<!-- bxSlider CSS file -->
-<link href="http://bxslider.com/lib/jquery.bxslider.css" rel="stylesheet" />
+<!--<?php if($itemid == 108){ ?>
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 
 	<script type="text/javascript">
-	$(document).ready(function(){
-		$('.bxslider').bxSlider({
- 	 	minSlides: 4,
-  		maxSlides: 4,
- 		slideWidth: 360,
-  		slideMargin: 10
+		jQuery(document).ready(function(){		
+			jQuery("#click").click(function(){
+				jQuery(".downloads").slideToggle();
+			});
 		});
-	});
 	</script>
-	<?php } ?>
+	<?php } ?>-->
+
+
+
+
+<script type="text/javascript">
+jQuery.noConflict();
+jQuery(document).ready(function(){
+	jQuery('.nav').slicknav();
+});
+</script>
+
 
 </head>
 
 <body class="site <?php echo $option
+	. ' alias-' . $alias
 	. ' view-' . $view
 	. ($layout ? ' layout-' . $layout : ' no-layout')
 	. ($task ? ' task-' . $task : ' no-task')
@@ -256,9 +272,62 @@ else
 						</div>
 					</div>
 				</div>
+				<!--<script src="http://code.jquery.com/jquery-1.8.3.js" type="text/javascript"></script>-->
+				<script>
+				jQuery(document).ready(function() {
+    
+    				var $item = jQuery('.alias-gallery div.wrapper.item'), //Cache your DOM selector
+        			visible = 12, //Set the number of items that will be visible
+        			index = 0, //Starting index
+        			endIndex = ( $item.length / visible ) - 1; //End index
+    
+   				jQuery('.next').click(function(){
+        			if(index < endIndex ){
+          			index++;
+          			$item.animate({'left':'-=220px'});
+        		}
+    			});
+    
+    			jQuery('.prev').click(function(){
+        			if(index > 0){
+         			 index--;            
+          			$item.animate({'left':'+=220px'});
+       			 }
+    			});
+    
+				});
+				</script>
+				<!--<script type="text/javascript">
+					function hello(){
+						var ArrDate = document.getElementById("ArrDate").value;
+						var Nts = document.getElementById("Nts").value;
+						var Rooms_0 = document.getElementById("Rooms_0").value;
+						var Adults_0 = document.getElementById("Adults_0").value;
+						var Kids_0 = document.getElementById("Kids_0").value;
+						
+						//var url = "https://apps.hti-systems.com/extraordinary/blackrhino/desktop.html?locale=en_US#SearchResult:ArrDate=Dec 19, 2014,Nts="+ Nts +",RatesStartDate=Dec 19, 2014,RatesNts=14,Rooms_0="+ Rooms_0 +",Adults_0="+ Adults_0 +",Kids_0="+ Kids_0 +"";
+						//window.location.href = url;
+					}
+				</script>-->
+				<link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+					<script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+					<script>
+						jQuery(function() {
+						jQuery( ".dateBoxPopup" ).datepicker({
+						dateFormat: 'dd-mm-yy'
+						});
+					});
+					</script>
 		
 	</footer>
 </div>
+
+
+
+
+
+
+
 
 </body>
 </html>

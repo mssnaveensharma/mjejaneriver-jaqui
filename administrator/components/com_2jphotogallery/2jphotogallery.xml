@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="1.6.0" method="upgrade">
+	<name>2J Photo Gallery</name>
+	<creationDate>2014</creationDate>
+	<author>2Joomla Team</author>
+	<authorEmail>support@2joomla.net</authorEmail>
+	<authorUrl>http://www.2joomla.net</authorUrl>
+	<copyright>Copyright (c) 2008-2014	2Joomla.net All rights reserved</copyright>
+	<license>released under GNU/GPL License : http://www.gnu.org/copyleft/gpl.html</license>
+	<version>1.0.0</version>
+
+	<description>2J Photo Gallery it's multicategory advanced gallery with cool animation for the thumbnails and hover effects. This is fully responsive gallery with support of the swipe mode, keyboard or mousewheel navigation on the lightbox. Advanced mobile devices support. Lightbox with fullscreen mode, social buttons and thumbnails carousel. In gallery implemented cool grid layout with advanced configuration options. You can find here google style pagination mode, when after click on read more button gallery load new images. It's possible to insert multiply copies of the photo gallery to the same page and every gallery could have different settings.</description>
+
+	<scriptfile>script.php</scriptfile>
+	
+	<files>
+		<filename>index.html</filename>
+	</files>
+	
+	<administration>
+		<menu img="components/com_2jphotogallery/2jphotogallery_16.png">COM_2JPHOTOGALLERY_MENU</menu>
+		<files>
+			<filename>2jphotogallery.php</filename>
+			<filename>index.html</filename>
+			<filename>2jphotogallery_16.png</filename>
+		</files>
+		<languages>
+			<language tag="en-GB">language/en-GB/en-GB.com_2jphotogallery.sys.ini</language>
+		</languages>
+	</administration>
+
+</extension>
+

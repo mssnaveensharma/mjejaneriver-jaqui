@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="details">
+		<field name="id" type="hidden" />
+		<field
+			name="title"
+			type="text"
+			label="COM_TWOJTOOLBOX_ITEM_TITLE_LABEL"
+			description="COM_TWOJTOOLBOX_ITEM_TITLE_DESC"
+			size="40"
+			class="inputbox validate-greeting"
+			required="true"
+			default=""
+		/>
+		<field name="state" type="list"
+			label="JSTATUS" description="COM_TWOJTOOLBOX_ITEM_FIELD_STATE_DESC"
+			class="inputbox" size="1" default="1" >
+			<option value="1">JPUBLISHED</option>
+			<option value="0">JUNPUBLISHED</option>
+		</field>
+		<field name="cat" type="TwoJPhotoGalleryCat" label="Category" description="" />
+	</fieldset>
+	<fieldset name="details_right">
+		<field
+			name="type"
+			type="twojtoolboxdisplaytype"
+			label="COM_TWOJTOOLBOX_ITEM_TYPE_LABEL"
+			description="COM_TWOJTOOLBOX_ITEM_TYPE_DESC"
+			default=""
+		/>
+	</fieldset>	
+	
+	<!-- twojtext    twojradio    radius    border    padding   twojList-->
+	
+	<fields name="params">
+	<fieldset name="options1" label="General">
+		
+       
+		
+		<field name="galleryWidth" type="twojText" size="5" addtext="px or %" default="" label="Gallery Width" description="width of the general gallery panel, place where gallery show all generated thumbnails. Combining values of the gallery and thumbnails width you can make gallery with thumbnails matrix. You can put images in 2 , 3 .... or any amount of columns you wish. Acceptable values in pixels of percents" />
+		<field name="galleryMaxWidth" type="twojText" size="5" addtext="px or %" default="1260" label="Gallery Max Width" description="width of the general gallery panel, place where gallery show all generated thumbnails. Combining values of the gallery and thumbnails width you can make gallery with thumbnails matrix. You can put images in 2 , 3 .... or any amount of columns you wish. Acceptable values in pixels of percents" />
+		
+		<field name="galleryAlign" type="twojList"  default="0" label="Gallery Align" description="here you can select one from the 3 values [left, center, right] for alignment gallery thumbnails on the frame">
+			<option value="0" >JDISABLED</option>
+			<option value="left" >left</option>
+			<option value="centre">centre</option>
+			<option value="right">right</option>
+		</field>
+		<field name="galleryBgColor" type="twojText" class="twoj_color"  size="12" default="transparent" label="Gallery Background Color" description="background color for the gallery panel. When you click on this field you’ll see ajax color selector" />
+		
+		<field name="galleryPadding" type="padding"  default_left="0" default_top="0" default_right="0" default_bottom="0"  label="Gallery Padding" description="padding for every side of the gallery. Every side could have different padding value. Value 0 for no padding case. Only integer values" />
+		<field name="galleryPadding_top" type="twojtoolboxfieldrezerv"/>
+		<field name="galleryPadding_right" type="twojtoolboxfieldrezerv"/>
+		<field name="galleryPadding_left" type="twojtoolboxfieldrezerv"/>
+		<field name="galleryPadding_bottom" type="twojtoolboxfieldrezerv"/>
+		
+		<field name="borderspacer_label_gallery" type="twojspacer" long="1" label="Border and Shadow Options"/>				
+			
+		<field name="galleryBorder" type="TwoJMultiValues"  default="{'enabled': 0, 'width': 1, 'style': 'solid', 'color':'#000000'}" label="Gallery Border" hide_opacity="1" description="configuration of the gallery border consist of three parameters border width, type and color" />
+		<field name="galleryShadow" type="TwoJMultiValues"  default="{'enabled': 0, 'width': 4, 'color':'#000000', 'opacity': '30'}" label="Gallery Shadow" hide_style="1" description="configuration of the gallery shadow consist of three parameters width, color and opacity value for the shadow" />
+		
+		<field name="contentspacer_label_gallery" type="twojspacer" long="1" label="Layout and Ordering"/>				
+		
+		<field name="thumbLayout" type="twojRadio" 
+		json="{
+			'show':{
+				'0': 'jform[params][thumbLayoutOne]',
+				'1': 'jform[params][thumbLayoutArray]'
+				
+			}, 
+			'hide':{
+				'0': 'jform[params][thumbLayoutArray]',
+				'1': 'jform[params][thumbLayoutOne]'
+			} 
+		}"
+		default="0" label="Thumbnails Layout"  description="here yo ucan select layout mode of the thumbnails">
+            <option value="0">One</option>
+            <option value="1">Array</option>
+        </field>
+		
+		<field name="thumbLayoutOne" type="twojList"  default="9" label="Layout Grid Mode"  description="please select one of the layout grid modes">
+            <option value="0">Random</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+			<option value="11">11 Square Grids. 3 in the Row</option>
+			<option value="12">12 Square Grids. 4 in the Row</option>
+			<option value="13">13 Square Grids. 5 in the Row</option>
+			<option value="14">14 Square Grids. 6 in the Row</option>
+			<option value="15">15</option>
+			<option value="16">16</option>
+			<option value="17">17</option>
+			<option value="18">18</option>
+			<option value="19">19</option>
+			<option value="20">20</option>
+			<option value="21">21</option>
+			<option value="22">22</option>
+			<option value="23">23</option>
+        </field>
+		
+		<field name="thumbLayoutArray" type="twojList" multiple="1" size="5"  default="0" label="Layout Grid Array"  description="make you able to select multiply grid layouts at the same time">
+            <option value="0">Random</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+			<option value="11">11</option>
+			<option value="12">12</option>
+			<option value="13">13</option>
+			<option value="19">19</option>
+			<option value="20">20</option>
+			<option value="21">21</option>
+			<option value="22">22</option>
+			<option value="23">23</option>
+        </field>
+		
+		
+		<field name="orderby" type="twojList"  default="0" label="Images ordering by" description="custom images ordering in gallery. Native images ordering you can change in images manager">
+			<option value="0" >Native Ordering</option>
+			<option value="1" >Native Ordering(descending)</option>
+			<option value="2" >Name</option>
+			<option value="3" >Name(descending)</option>
+			<option value="4" >Random</option>
+			<option value="5" >Id</option>
+			<option value="6" >Id (descending)</option>
+		</field>
+		
+	</fieldset>
+	<fieldset name="thumbOptions" label="Thumbnails">
+		<field name="thumbStyle_label" type="twojspacer" long="1" label="Hover Description Options"/>				
+	   
+		<field name="thumbsStyle" type="twojList"  default="0" label="Style" description="select style for the hover description panel">
+			<option value="0" >Disabled</option>
+			<option value="1">Fixed</option>
+			<option value="2">Dinamic</option>
+		</field>
+		
+		<field name="thumbsDesc" type="twojList"  default="2" label="Description Text"  description="description panel text mode">
+            <option value="1">Title</option>
+            <option value="2">Title + Description</option>
+			<option value="3">Description</option>
+        </field>
+		
+		<field name="thumbsStyleFix" type="twojList"  default="fatcaption-bottom" label="Style" description="style of the description panel text">
+			<option value="fatcaption-top" >Top medium font</option>
+			<option value="fatcaption-bottom">Bottom medium font</option>
+			<option value="gallerycaption-bottom">Bottom big font</option>
+		</field>
+		
+		<field name="thumbHover_label" type="twojspacer" long="1" label="Hover Options"/>				
+		
+		<field name="thumbsHover" type="twojRadio" default="0" label="Hover"  description="enable, diable or switch on flat buttons in this mode">
+            <option value="0">JDISABLED</option>
+			<option value="1" >JENABLED</option>
+			<option value="2" >Flat button</option>
+        </field>
+		<field name="thumbsHoverText" type="twojList"  default="3" label="Hover Text" description="select here elements to show on hover, title, description or title and description">
+			<option value="0">Hide all</option>
+			<option value="1" >Title</option>
+			<option value="2" >Description</option>
+			<option value="3" >Title and Description</option>
+		</field>
+		<field name="thumbClick_label" type="twojspacer" long="1" label="Click Options"/>				
+		
+		<field name="thumbsHoverClick" type="twojList"  default="1" label="Hover Click" description="select action for hover click option. Disable it, select lightbox or link to show after click, enable buttons">
+			<option value="0">JDISABLED</option>
+			<option value="1" >Lightbox or Link</option>
+			<option value="2" >Show buttons</option>
+		</field>
+
+		<!-- <field name="delay" type="twojText" default="20" addtext=" [0..80] ms" label="delay" description="" /> -->
+			 
+		<field name="borderspacer_label" type="twojspacer" long="1" label="Border options"/>				
+		<field name="border" type="TwoJMultiValues"  default="{'enabled': 0, 'width': 1, 'style': 'solid', 'color':'#000000'}" label="Border" hide_opacity="1" description="configuration of the thumbnails border consist of three parameters border width, type and color" />
+		<field name="shadow" type="TwoJMultiValues"  default="{'enabled': 1, 'width': 4, 'color':'#000000', 'opacity': '30'}" label="Shadow" hide_style="1" description="configuration of the thumbnails shadow consist of three width, color and opacity value for the shadow" />
+		<field name="radius" type="twojText" size="3" addtext="px" default="5" label="Radius" description="define radius for rounded corners of the thumbnails in pixels" />
+		
+			
+		<field name="hoverborderspacer_label" type="twojspacer" long="1" label="Border Hover Options"/>				
+		<field name="hoverborder" type="TwoJMultiValues"  default="{'enabled': 0, 'width': 1, 'style': 'solid', 'color':'#000000'}" label="Hover Border" hide_opacity="1" description="configuration of the thumbnails hover border consist of three parameters border width, type and color" />
+		<field name="hovershadow" type="TwoJMultiValues"  default="{'enabled': 1, 'width': 4, 'color':'#000000', 'opacity': '70'}" label="Hover  Shadow" hide_style="1" description="configuration of the thumbnails hover shadow consist of three width, color and opacity value for the shadow" />
+		
+		
+		
+		<field name="sizePadding_label" type="twojspacer" long="1" label="Size and Resolution Options"/>				
+		
+        <field name="thumb_width"  type="twojText" size="5"    default="450" label="Resolution Width" addtext="px" description="width resolution of the thumbnails in pixels" />
+		<field name="thumb_height" type="twojText" size="5"    default="320" label="Resolution Height" addtext="px" description="height resolution of the thumbnails in pixels" />
+		
+		<field name="thumb_type_resizing" type="twojRadio" 
+        json="{
+			'show':{
+				'2': ['jform[params][thumb_resize_position]'], 
+				'0': ['jform[params][thumb_color]'] 
+			}, 
+			'hide':{
+				'0':['jform[params][thumb_resize_position]'], 
+				'1':['jform[params][thumb_resize_position]', 'jform[params][thumb_color]'], 
+				'2':['jform[params][thumb_color]']
+			} }"
+        default="1" label="Resizing shape" description="select the way of the gallery thumbnails resizing. In the case of PROPORTIONAL value thumbnail will be resized proportional. In the case of the CROP values thumbnails cropping according to predefined size.">
+            <option value="0">proportional + fill</option>
+			<option value="1">proportional</option>
+            <option value="2">crop</option>
+        </field>
+        
+        <field name="thumb_resize_position" type="twojList"   default="0" label="Thumbnail resizing align" description="required option in the case of CROP value in resizing shape. This options responsible for direction of the displacement during rezing process of the gallery thumbnails.">
+            <option value="0">center</option>
+            <option value="1">left</option>
+            <option value="2">right</option>
+            <option value="3">top</option>
+            <option value="4">bottom</option>
+        </field>
+
+		
+		<field name="thumb_color" type="twojText" class="twoj_color"  size="12" default="#ffffff" label="Thumbnail background color" description="color could be specify in hex format (for example: #616161). To change color click on the color selector and pick up required color" />
+		
+		<field name="pending" hideButton="1" config="{ 
+				'pendingOn':{
+					'text': 'Set', 'role': 'showPanel', 
+					'fields':{
+						'paddingHorizontal':	{'type':'text', 'length': 20, 'textBefore': 'Horizontal:', 	'textAfter': 'px'},
+						'paddingVertical':		{'type':'text', 'length': 20, 'textBefore': 'Vertical:', 	'textAfter': 'px'}
+					}
+				}
+				}" type="TwoJMultiButton"  default='{"mainButton":"pendingOn","pendingOn":{"paddingHorizontal":"10", "paddingVertical":"10"}}' label="Padding"  description="horizontal and vertical paddings for the thumbnails in pixels" />
+				
+		
+	</fieldset>
+	
+	<fieldset name="paginationOptions" label="Pagination">
+		<field name="countPagination" type="twojText" size="5"    default="25" label="Amount on page" description="here you can define amount of the images per gallery pagination page" />
+		
+		<field name="buttonAlign" type="twojList"  default="center" label="Align"  description="align read more buttons on left, right or center side of the gallery">
+            <option value="left">Left</option>
+			<option value="center">Center</option>
+            <option value="right">Right</option>
+        </field>
+		
+		<field name="buttonColor" type="twojList"  default="" label="Color"  description="select one of the pre-defined pagination button style">
+            <option value="">Blue</option>
+			<option value="red">Red</option>
+            <option value="green">Green</option>
+        </field>
+		
+		<field name="buttonTextLoading" type="twojText" size="40" filter="raw" default="Loading..." label="Loading Label" description="lable show when loading process in progress" />
+		<field name="buttonTextLoadmore" type="twojText" size="40" filter="raw" default="Load More" label="Button Label" description="label of the load more button" />
+		
+
+	</fieldset>
+	
+	<fieldset name="lightboxOptions" label="Lightbox">
+		<field name="lightboxStyle" type="twojList"   default="dark" label="Lightbox Theme" description="Here you can select lightbox style for your gallery. Mobile light box support mobile touch screen devices">
+            <option value="dark">dark</option>
+            <option value="light">light</option>
+			<option value="mac">mac</option>
+			<option value="metro-black">metro-black</option>
+			<option value="metro-white">metro-white</option>
+			<option value="parade">parade</option>
+			<option value="smooth">smooth</option>
+        </field>
+		
+
+		<field name="lightboxArrows" type="twojRadio"  default="0" label="Arrows"  description="enable/disable navigation arrows in the lighbox">			<option value="0">JDISABLED</option><option value="1">JENABLED</option></field>
+		<field name="lightboxSlideshow" type="twojRadio"  default="0" label="Slideshow"  description="enable/disable slideshow mode in the lightbox">	<option value="0">JDISABLED</option><option value="1">JENABLED</option></field>
+		<field name="lightboxToolbar" type="twojRadio"  default="1" label="Toolbar"  description="enable/disable toolbar navigation element in the lightbox">		<option value="0">JDISABLED</option><option value="1">JENABLED</option></field>
+		<field name="lightboxFullscreen" type="twojRadio"  default="1" label="Fullscreen"  description="enable/diable fullscreen mode for the lightbox">	<option value="0">JDISABLED</option><option value="1">JENABLED</option></field>
+		<field name="lightboxThumbnail" type="twojRadio"  default="1" label="Thumbnails"  description="enable/disable thumbnail carousel in the lightbox">	<option value="0">JDISABLED</option><option value="1">JENABLED</option></field>
+		<field name="lightboxKeyboard" type="twojRadio"  default="1" label="Keyboard"  description="enable/disable keyboard navigation support">		<option value="0">JDISABLED</option><option value="1">JENABLED</option></field>
+		<field name="lightboxSwipe" type="twojRadio"  default="1" label="Swipe"  description="enable/disable swipe navigation support">			<option value="0">JDISABLED</option><option value="1">JENABLED</option></field>
+		<field name="lightboxMousewheel" type="twojRadio"  default="1" label="Mousewheel"  description="enable/disable mousewheel navigation in the lightbox">	<option value="0">JDISABLED</option><option value="1">JENABLED</option></field>
+		
+		<field name="lightboxThumb" type="twojRadio"  default="horizontal" label="Thumbnail layout"  description="layout of the thumbnails in the lightbox one of two directions horizontal or vertical">
+            <option value="horizontal">horizontal</option>
+            <option value="vertical">vertical</option>
+        </field>
+		
+		<field name="lightboxSocialButton" type="twojRadio"  default="0" label="Social Buttons"  description="enable/disable social buttons on the lightbox">
+            <option value="0">JDISABLED</option>
+            <option value="1">JENABLED</option>
+        </field>
+		
+		<field name="lightboxDesc" type="twojList"  default="1" label="Lightbox Text"  description="here you can select what text you wish to show in the lightbox below image: title, title with image description or just description">
+            <option value="0">Hide All</option>
+			<option value="1">Title</option>
+            <option value="2">Title + Description</option>
+			<option value="3">Description</option>
+        </field>
+		
+		
+		<field name="lightboxAdvanced_label" type="twojspacer" long="1" label="Advanced Options"/>	
+	
+		<field name="lightboxIframeWidth"  type="twojText" size="5"    default="640" label="Iframe Width" description="Width of the Iframe in lightbox, for the cases if you select this link values: Page in lightbox, Video, Google Map" />
+		<field name="lightboxIframeHeight" type="twojText" size="5"    default="360" label="Iframe Height" description="Height of the Iframe in lightbox, for the cases if you select this link values: Page in lightbox, Video, Google Map" />
+		
+		<field name="lightboxTextPrevious" type="twojText" default="Previous" 					label="Previous label" 	description="previous navigation button text label. Use space if you wish to leave this label empty" />
+		<field name="lightboxTextNext" type="twojText" default="Next" 							label="Next label" 		description="next navigation button text label. Use space if you wish to leave this label empty" />
+		<field name="lightboxTextClose" type="twojText" default="Press Esc to close" 			label="Close label" 	description="close button text label. Use space if you wish to leave this label empty" />
+		
+		<field name="lightboxTextSlideShow" type="twojText" default="Slideshow" 	label="Slideshow label" 	description="" />
+		<field name="lightboxTextenF" type="twojText" default="Enter Fullscreen (Shift+Enter)" 	label="Enter FullScreen label" 	description="enter fullscreen mode label customization field" />
+		<field name="lightboxTextexF" type="twojText" default="Exit Fullscreen (Shift+Enter)" 	label="Exit FullScreen label" 	description="exit fullscreen mode label customization field" />
+		
+		<field name="lightboxFullViewPort" type="twojList"  default="fit" label="Fullscreen View"  description="select proper view mode for the fullscreen images resizing">
+            <option value="fill">fill</option>
+            <option value="fit">fit</option>
+			<option value="stretch">stretch</option>
+			<option value="center">center</option>
+        </field>
+		
+	</fieldset>
+	<fieldset name="menuOptions" label="Menu">
+		<field name="menu" type="twojRadio"  default="1" label="Menu Status"  description="enable/disable menu for the gallery">
+            <option value="0">JDISABLED</option>
+            <option value="1">JENABLED</option>
+        </field>
+		
+		<field name="menuRootLabel" type="twojText" default="All" 	label="Root label" 	description="here you can customize label for the menu root menu item" />
+		<field name="menuMaxWidth" type="twojText" size="5" addtext="px or %" default="" label="Max Width" description="maximum width of the menu in pixels or in %" />
+		<field name="menuFullWidth" type="twojRadio"  default="0" label="Full Width"  description="menu will stretch till the maximum allowed size of the buffer">
+             <option value="0">JDISABLED</option>
+            <option value="1">JENABLED</option>
+        </field>
+		<field name="menuAlign" type="twojRadio"  default="left" label="Align" description="align menu to the left, right side or to the center of the gallery">
+			<option value="left" >left</option>
+			<option value="center">center</option>
+			<option value="right">right</option>
+		</field>
+		
+		<field name="Padding" hideButton="1" config="{ 
+				'menuPendingSet':{
+					'text': 'Set', 'role': 'showPanel', 
+					'fields':{
+						'paddingLeft':	{'type':'text', 'length': 20, 'textBefore': 'Left:', 	'textAfter': 'px'},
+						'paddingRight':	{'type':'text', 'length': 20, 'textBefore': 'Right:', 	'textAfter': 'px'},
+						'paddingBottom':{'type':'text', 'length': 20, 'textBefore': 'Bottom:', 	'textAfter': 'px'}
+					}
+				}
+				}" type="TwoJMultiButton"  default='{"mainButton":"menuPendingSet","menuPendingSet":{"paddingLeft":"10", "paddingRight":"10", "paddingBottom":"10"}}' label="Padding"  description="padding for the left, right or bottom side of the menu block" />
+				
+		<field name="menuRoot" type="twojRadio"  default="1" label="Root"  description="enable/disable root menu item">
+            <option value="0">JDISABLED</option>
+            <option value="1">JENABLED</option>
+        </field>
+		
+		<field name="menuEvent" type="twojRadio"  default="0" label="Event"  description="select action even for the menu from click, hover or toggle">
+            <option value="0">Click</option>
+            <option value="hover">Hover</option>
+			<option value="toggle">Toggle</option>
+        </field>
+		
+		<field name="menuType" type="twojRadio"  default="0" label="Type"  description="select one of the menu general modes regular style menu or combobox style menu">
+            <option value="0">Menu</option>
+            <option value="1">ComboBox</option>
+        </field>
+		<field name="menuStyle" type="twojList"  default="default" label="Theme"  description="here you can select one from the 6 pre-defined menu themes">
+            <option value="dark">dark</option>
+			<option value="default">default</option>
+			<option value="impressive">impressive</option>
+			<option value="inspire">inspire</option>
+			<option value="metro">metro</option>
+			<option value="miracle">miracle</option>
+        </field>
+		<field name="menuColor" type="twojList"  default="red" label="Color Scheme"  description="for every menu you can select some pre-defined color scheme which make you able to make navigation looks close toy our general website styles">
+            <option value="red">red</option>
+			<option value="pink">pink</option>
+			<option value="honeysuckle">honeysuckle</option>
+			<option value="purple">purple</option>
+			<option value="phlox">phlox</option>
+			<option value="blue">blue</option>
+			<option value="quarry">quarry</option>
+			<option value="cedar">cedar</option>
+			<option value="green">green</option>
+			<option value="teal">teal</option>
+			<option value="bamboo">bamboo</option>
+			<option value="yellow">yellow</option>
+			<option value="emberglow">emberglow</option>
+			<option value="orange">orange</option>
+			<option value="coffee">coffee</option>
+			<option value="nougat">nougat</option>
+        </field>
+		
+		
+		
+		<field name="categoryAnimation" type="twojList"  default="rotatescale" label="Animation" description="animation of the gallery images">
+			<option value="fade" >fade</option>
+			<option value="rotate">rotate</option>
+			<option value="scale">scale</option>
+			<option value="rotatescale">rotatescale</option>
+			<option value="pagetop">pagetop</option>
+			<option value="pagebottom">pagebottom</option>
+			<option value="pagemiddle">pagemiddle</option>
+		</field>
+		
+		<field name="filterChangeSpeed" type="twojText" size="5" addtext="values should be between 300 - 1400 (0.3sec till 1.4 Sec) " default="600" label="Animation Speed" description="customize animation speed of the thumbnails in gallery" />
+		<field name="filterChangeRotate" type="twojText" size="5" addtext="values are -720  till 720.  99= Random Rotating." default="99" label="Change Rotate" description="customize rotation of the thumbnails in the range of values -720 .. 720" />
+		
+		<field name="filterChangeScale" type="twojList"  default="0.6" label="Change Scale" description="customize scaling options inthe range of the values from 0 .. 2">
+			<option value="0" >0</option>
+			<option value="0.1">0.1</option>
+			<option value="0.2">0.2</option>
+			<option value="0.3">0.3</option>
+			<option value="0.4">0.4</option>
+			<option value="0.5">0.5</option>
+			<option value="0.6">0.6</option>
+			<option value="0.7">0.7</option>
+			<option value="0.8">0.8</option>
+			<option value="0.9">0.9</option>
+			<option value="1.0">1.0</option>
+			<option value="1.1">1.1</option>
+			<option value="1.2">1.2</option>
+			<option value="1.3">1.3</option>
+			<option value="1.4">1.4</option>
+			<option value="1.5">1.5</option>
+			<option value="1.6">1.6</option>
+			<option value="1.7">1.7</option>
+			<option value="1.8">1.8</option>
+			<option value="1.9">1.9</option>
+			<option value="2.0">2.0</option>
+		</field>
+		
+	</fieldset>
+	
+	</fields>
+</form>

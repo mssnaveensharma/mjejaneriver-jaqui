@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="content">
+        <name>PLG_BLUEIMP</name>
+        <author>Nter webdesign</author>
+        <creationDate>January 2014</creationDate>
+        <copyright>Copyright (C) 2005 - 2013 Open Source Matters. All rights reserved.</copyright>
+        <license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+        <authorEmail>info@nterwebdesgin.nl</authorEmail>
+        <authorUrl>www.nterwebdesign.nl</authorUrl>
+        <version>1.0</version>
+        <description>PLG_BLUEIMP_XML_DESCRIPTION</description>
+        <files>
+                <filename plugin="blueimp">blueimp.php</filename>
+                <filename>blueimp.xml</filename>
+                <filename>index.html</filename>
+                <folder>css</folder>
+                <folder>img</folder>
+                <folder>js</folder>
+        </files>
+        <languages folder="language">
+                <language tag="nl-NL">nl-NL/nl-NL.plg_content_blueimp.ini</language>
+                <language tag="nl-NL">nl-NL/nl-NL.plg_content_blueimp.sys.ini</language>
+                <language tag="en-GB">en-GB/en-GB.plg_content_blueimp.ini</language>
+                <language tag="en-GB">en-GB/en-GB.plg_content_blueimp.sys.ini</language>
+        </languages>
+        <config>
+
+                <fields name="params">
+                        <fieldset name="basic">
+                                <field name="divid" type="input" default="blueimp" label="PLG_BLUEIMP_DIVID" description="PLG_BLUEIMP_DIVID_DESC">
+                                </field>
+
+                                <field name="show-controls" type="radio" class="btn-group" default="blueimp-gallery-controls" label="PLG_BLUEIMP_NAVIGATION" description="PLG_BLUEIMP_NAVIGATION_DESC">
+                                        <option value="blueimp-gallery-controls">JYES</option>
+                                        <option value="0">JNO</option>
+                                </field>
+                                <field name="show-title" type="radio" class="btn-group" default="1" label="PLG_BLUEIMP_TITLE" description="PLG_BLUEIMP_TITLE_DESC">
+                                        <option value="1">JYES</option>
+                                        <option value="0">JNO</option>
+                                </field>
+                                <field name="show-autoplay" type="radio" class="btn-group" default="1" label="PLG_BLUEIMP_AUTOPLAY" description="PLG_BLUEIMP_AUTOPLAY_DESC">
+                                        <option value="1">JYES</option>
+                                        <option value="0">JNO</option>
+                                </field>
+                        </fieldset>
+                </fields>
+
+        </config>
+</extension>

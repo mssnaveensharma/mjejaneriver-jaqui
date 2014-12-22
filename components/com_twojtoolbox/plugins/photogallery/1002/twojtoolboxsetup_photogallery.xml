@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<twojplugin version="1">
+	<name>2J Photo Gallery</name>
+	<type>photogallery</type>
+	<creationDate>01-09-2014</creationDate>
+	<version>1002</version>
+	<description>2J Photo Gallery it's multicategory advanced gallery with cool animation for the thumbnails and hover effects. This is fully responsive gallery with support of the swipe mode, keyboard or mousewheel navigation on the lightbox. Advanced mobile devices support. Lightbox with fullscreen mode, social buttons and thumbnails carousel. In gallery implemented cool grid layout with advanced configuration options. You can find here google style pagination mode, when after click on read more button gallery load new images. It's possible to insert multiply copies of the photo gallery to the same page and every gallery could have different settings.</description>
+	<description_small>2J Photo Gallery multicategories gallery, fully mobile devices support, with grid layout and cool thumbnails animation</description_small>
+	<multi>1</multi> 
+	<images>1</images>
+	<multitag>0</multitag>
+	<ordering>1</ordering>
+	<twojtoolbox>1021</twojtoolbox>
+	<files>
+		<filename>twojtoolboxsetup_photogallery.xml</filename>
+		<filename>twoj_photogallery_plugin.php</filename>
+		<filename>twoj_photogallery_callback.php</filename>
+		<filename>item_options.xml</filename>
+		<filename>element_options.xml</filename>
+		<filename>mid_logo.png</filename>
+		<filename>index.html</filename>
+		<folder>js</folder>
+		<folder>css</folder>
+		<folder>fields</folder>
+	</files>
+</twojplugin>

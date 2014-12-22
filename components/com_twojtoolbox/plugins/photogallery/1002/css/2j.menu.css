@@ -1,0 +1,5 @@
+body ul.zetta-menu li:before,
+body ul.zetta-menu li:after{
+	content: "";
+	display: none;
+}
